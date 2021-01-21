@@ -3,6 +3,7 @@ import * as R from 'ramda';
 const xor1bit = R.curry((firstBit, secondBit) => {
     if (firstBit.length !== 1 || secondBit.length !== 1)
         throw new Error("Expected bit-string");
+    //eslint-disable-next-line
     if ((parseInt(firstBit) === 0) || (parseInt(firstBit) === 1) &&
         (parseInt(secondBit) === 0) || (parseInt(secondBit) === 1))
     {
